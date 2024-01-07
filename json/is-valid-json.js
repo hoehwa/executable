@@ -2,9 +2,19 @@
 
 const process = require('process');
 
+const isValidJSON = str => {
+  try {
+    JSON.parse(str);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
+
+
 try {
   console.log(
-    JSON.stringify(
+    isValidJSON(
       process.argv[2]
     )
   );
