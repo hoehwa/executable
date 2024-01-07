@@ -2,11 +2,17 @@
 
 const process = require('process');
 
-const urlString = 'https://mysite.com?p=42&from=home#details';
+const urlString = process.argv[2];
 const url = new URL(urlString);
 
 // Delete a parameter
-const removedParam = process.argv[2];
+const removedParam = process.argv[3];
 url.searchParams.delete(removedParam);
 
-console.log(`${url}`);
+try {
+  console.log(
+	`${url}`
+  );
+} catch (err) {
+  console.error(err.message)
+}

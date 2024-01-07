@@ -5,7 +5,7 @@ const process = require('process');
 const toHSLArray = hslStr => hslStr.match(/\d+/g).map(Number);
 
 try {
-  console.log(
+  console.table(
     toHSLArray(
       process.argv[2]
     )

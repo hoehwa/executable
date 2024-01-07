@@ -8,7 +8,7 @@ const toHSLObject = hslStr => {
 };
 
 try {
-  console.log(
+  console.table(
     toHSLObject(
       process.argv[2]
     )

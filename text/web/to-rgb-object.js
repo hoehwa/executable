@@ -8,7 +8,7 @@ const toRGBObject = rgbStr => {
 };
 
 try {
-  console.log(
+  console.table(
     toRGBObject(
       process.argv[2]
     )

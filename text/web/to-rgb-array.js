@@ -5,7 +5,7 @@ const process = require('process');
 const toRGBArray = rgbStr => rgbStr.match(/\d+/g).map(Number);
 
 try {
-  console.log(
+  console.table(
     toRGBArray(
       process.argv[2]
     )
