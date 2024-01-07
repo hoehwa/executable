@@ -8,6 +8,6 @@ const arrayToCSV = (arr, delimiter = ',') =>
     .join('\n');
 
 
-console.table(arrayToCSV([['a', 'b'], ['c', 'd']])); // '"a","b"\n"c","d"'
-console.table(arrayToCSV([['a', 'b'], ['c', 'd']], ';')); // '"a";"b"\n"c";"d"'
-console.table(arrayToCSV([['a', '"b" great'], ['c', 3.1415]]));
+console.log(arrayToCSV([['a', 'b'], ['c', 'd']]));  // '"a","b"\n"c","d"'
+console.log(arrayToCSV([['a', 'b'], ['c', 'd']], ';'));  // '"a";"b"\n"c";"d"'
+console.log(arrayToCSV([['a', '"b" great'], ['c', 3.1415]]));  // '"a","""b"" great"\n"c",3.1415'
