@@ -21,7 +21,6 @@ const copyToClipboard = str => {
     document.getSelection().addRange(selected);
   }
 };
-
 try {
   console.log(
     copyToClipboard(
@@ -31,6 +30,3 @@ try {
 } catch (err) {
   console.error(err.message)
 }
-
-
-

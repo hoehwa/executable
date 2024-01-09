@@ -20,6 +20,6 @@ try {
 
 /*
 💬 Note
-If you need to support older browsers, you might want to use Document.execCommand() instead. 
+If you need to support older browsers, you might want to use Document.execCommand() instead.
 You can find out more about it in the copyToClipboard snippet.
  */
